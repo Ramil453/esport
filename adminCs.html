@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/adminStyle.css" />
+		<title>Новости о киберспорте</title>
+	</head>
+	<body>
+		<div class="background">
+			<div class="registration-menu">
+				<div class="up-row">
+					<button class="auth-btn">АВТОРИЗАЦИЯ</button>
+					<button class="reg-btn">РЕГИСТРАЦИЯ</button>
+					<button class="cross-btn"><span></span><span></span></button>
+				</div>
+				<div class="down-row">
+					<div class="down-row-wrapper">
+						<!-- <form action="" method="post"> -->
+						<label for="login">Введите e-mail</label>
+						<input type="text" class="login-input" id="login" />
+
+						<label for="pass">Пароль</label>
+						<input type="password" class="pass-input" id="pass" />
+
+						<button class="auth-button">ВОЙТИ</button>
+						<!-- </form> -->
+					</div>
+				</div>
+
+				<div class="reg-menu">
+					<div class="reg-up-row">
+						<button class="auth-btn" id="auth-btn">АВТОРИЗАЦИЯ</button>
+						<button class="reg-btn">РЕГИСТРАЦИЯ</button>
+						<button class="reg-cross-btn cross-btn">
+							<span></span><span></span>
+						</button>
+					</div>
+					<div class="reg-down-row">
+						<div class="down-row-wrapper">
+							<form action="check.php" method="post">
+								<label for="login2">Введите e-mail</label>
+								<input
+									type="email"
+									class="login-input"
+									id="login2"
+									name="login2"
+								/>
+
+								<label for="name">Никнейм</label>
+								<input type="text" class="pass-input" id="name" name="name" />
+
+								<label for="pass2">Пароль</label>
+								<input
+									type="password"
+									class="pass-input"
+									id="pass2"
+									name="pass2"
+								/>
+
+								<label for="repeatPass">Повторите пароль</label>
+								<input type="password" class="pass-input" id="repeatPass" />
+
+								<button class="auth-button">РЕГИСТРАЦИЯ</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="wrapper">
+					<img
+						src="images/free-icon-letter-c-3665923 1.png"
+						alt="Logo"
+						class="logo"
+					/>
+					<h1 class="h1-title">CYBERSPORT</h1>
+					<nav class="navigation">
+						<ul>
+							<li>
+								<a href="adminIndex.html">ГЛАВНАЯ</a>
+							</li>
+							<li>
+								<a href="adminDota.html">DOTA 2</a>
+							</li>
+							<li>
+								<a href="adminCs.html"><span>CS 2</span></a>
+							</li>
+						</ul>
+					</nav>
+					<img
+						src="images/free-icon-user-8791434 1.png"
+						alt="icon"
+						class="icon"
+					/>
+					<h2 class="h2-title">
+						<li class="header-auth-btn"><a href="cs.html">ВЫЙТИ</a></li>
+					</h2>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="bg-image">
+				<div class="helper"></div>
+				<div class="container">
+					<div class="main-box">
+						<div class="main-news">
+							<h2 class="main-h2-title">Главные новости</h2>
+							<div class="news-row">
+								<img
+									src="images/1662776586_preview_1644804658_7-abrakadabra-fun-p-logotip-ks-go-bez-fona-12 1.png"
+									alt="Logo Dota"
+									class="news-icon"
+								/>
+								<input type="file" class="icon-new-file" />
+								<div class="news-text" contenteditable="true">
+									B8 Esports выбила ENCE из отборочных на IEM Dallas 2024 old
+									eLeVeN прошла на Elite Leauge
+								</div>
+								<button class="news-save-button">Сохранить</button>
+							</div>
+							<div class="news-row">
+								<img
+									src="images/1662776586_preview_1644804658_7-abrakadabra-fun-p-logotip-ks-go-bez-fona-12 1.png"
+									alt="Logo Dota"
+									class="news-icon2 news-icon"
+								/>
+								<input type="file" class="icon-new-file2 icon-new-file" />
+								<div class="news-text2 news-text" contenteditable="true">
+									Metizport сыграет с Heroic за выход на IEM Dallas 2024
+								</div>
+								<button class="news-save-button2">Сохранить</button>
+							</div>
+							<div class="news-row">
+								<img
+									src="images/1662776586_preview_1644804658_7-abrakadabra-fun-p-logotip-ks-go-bez-fona-12 1.png"
+									alt="Logo Dota"
+									class="news-icon3 news-icon"
+								/>
+								<input type="file" class="icon-new-file3 icon-new-file" />
+								<div class="news-text3 news-text" contenteditable="true">
+									Virtus.pro обыграла Heroic и прошла на IEM Dallas 2024
+								</div>
+								<button class="news-save-button3">Сохранить</button>
+							</div>
+							<div class="news-row">
+								<img
+									src="images/1662776586_preview_1644804658_7-abrakadabra-fun-p-logotip-ks-go-bez-fona-12 1.png"
+									alt="Logo Dota"
+									class="news-icon4 news-icon"
+								/>
+								<input type="file" class="icon-new-file4 icon-new-file" />
+								<div class="news-text4 news-text" contenteditable="true">
+									Heroic заработала квоту на IEM Dallas 2024
+								</div>
+								<button class="news-save-button4">Сохранить</button>
+							</div>
+						</div>
+						<div class="relevant-news">
+							<h2 class="main-h2-title">Актуальные</h2>
+
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img src="images/c.png" alt="" class="relevant-new-icon cs" />
+								<input type="file" class="icon-add-file" />
+								<!-- <div class="icon-file-bg"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title" contenteditable="true">
+										ECSTATIC вышла в Elimination Stage на PGL Major Copenhagen
+										2024
+									</div>
+									<button class="save-button">Сохранить</button>
+									<img
+										src="https://virtus-img.cdnvideo.ru/images/material-card/plain/4b/4bc44dc1-7fc9-45d0-86cc-2135511a08ca.jpg"
+										alt=""
+										class="previewImage"
+									/>
+									<input type="file" class="add-file" />
+									<!-- <div class="add-file-bg">
+										<img
+											src="images/free-icon-plus-3303893.png"
+											alt=""
+											width="70px"
+											height="70px"
+										/>
+									</div> -->
+								</div>
+							</div>
+
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles2.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img
+									src="images/c.png"
+									alt=""
+									class="relevant-new-icon2 relevant-new-icon cs"
+								/>
+								<input type="file" class="icon-add-file2" />
+								<!-- <div class="icon-file-bg2"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title2" contenteditable="true">
+										Heroic заработала квоту на IEM Dallas 2024
+									</div>
+									<button class="save-button2" id="btn">Сохранить</button>
+
+									<img
+										src="images/image 2.png"
+										alt=""
+										class="previewImage2 previewImage"
+									/>
+									<input type="file" class="add-file2 add-file" />
+								</div>
+							</div>
+
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles3.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img
+									src="images/c.png"
+									alt=""
+									class="relevant-new-icon3 relevant-new-icon"
+								/>
+								<input type="file" class="icon-add-file3" />
+								<!-- <div class="icon-file-bg3"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title3" contenteditable="true">
+										Ричард Льюис вернется к роли ведущего студии аналитики
+										<br />
+										на мейджоре по CS спустя два года
+									</div>
+									<button class="save-button3">Сохранить</button>
+
+									<img
+										src="images/image 3.png"
+										alt=""
+										class="previewImage3 previewImage"
+									/>
+									<input type="file" class="add-file3 add-file" />
+									<!-- <div class="add-file-bg3">
+										<img
+											src="images/free-icon-plus-3303893.png"
+											alt=""
+											width="70px"
+											height="70px"
+										/>
+									</div> -->
+								</div>
+							</div>
+
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles4.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img
+									src="images/c.png"
+									alt=""
+									class="relevant-new-icon4 relevant-new-icon cs"
+								/>
+								<input type="file" class="icon-add-file4" />
+								<!-- <div class="icon-file-bg4"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title4" contenteditable="true">
+										Falcons, ENCE и Complexity поборются за слот на EPL S20 на
+										ESL<br />
+										Challenger Jönköping 2024
+									</div>
+									<button class="save-button4">Сохранить</button>
+
+									<img
+										src="https://virtus-img.cdnvideo.ru/images/material-card/plain/27/27e73cbd-d2ef-4720-9323-b2bdb2387c04.jpg"
+										alt=""
+										class="previewImage4 previewImage"
+									/>
+									<input type="file" class="add-file4 add-file" />
+									<!-- <div class="add-file-bg4">
+										<img
+											src="images/free-icon-plus-3303893.png"
+											alt=""
+											width="70px"
+											height="70px"
+										/>
+									</div> -->
+								</div>
+							</div>
+
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles5.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img
+									src="images/c.png"
+									alt=""
+									class="relevant-new-icon5 relevant-new-icon"
+								/>
+								<input type="file" class="icon-add-file5" />
+								<!-- <div class="icon-file-bg5"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title5" contenteditable="true">
+										Jkaem после вылета Apeks из мейджора: «Я не знаю, что нас
+										ждет дальше»
+									</div>
+									<button class="save-button5">Сохранить</button>
+
+									<img
+										src="https://virtus-img.cdnvideo.ru/images/material-card/plain/ea/eac469ed-8980-4e4c-b1c1-88f73345e5d6.png"
+										alt=""
+										class="previewImage5 previewImage"
+									/>
+									<input type="file" class="add-file5 add-file" />
+									<!-- <div class="add-file-bg5">
+										<img
+											src="images/free-icon-plus-3303893.png"
+											alt=""
+											width="70px"
+											height="70px"
+										/>
+									</div> -->
+								</div>
+							</div>
+
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles6.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img
+									src="images/c.png"
+									alt=""
+									class="relevant-new-icon6 relevant-new-icon cs"
+								/>
+								<input type="file" class="icon-add-file6" />
+								<!-- <div class="icon-file-bg6"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title6" contenteditable="true">
+										Ax1Le уже не тащит. С такой игрой PGL Major Copenhagen
+										2024<br />
+										должен стать последней проверкой люркера
+									</div>
+									<button class="save-button6">Сохранить</button>
+
+									<img
+										src="https://virtus-img.cdnvideo.ru/images/material-card/plain/8a/8a91862e-421f-4f1d-80fa-680848c731ac.png"
+										alt=""
+										class="previewImage6 previewImage"
+									/>
+									<input type="file" class="add-file6 add-file" />
+									<!-- <div class="add-file-bg6">
+										<img
+											src="images/free-icon-plus-3303893.png"
+											alt=""
+											width="70px"
+											height="70px"
+										/>
+									</div> -->
+								</div>
+							</div>
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles7.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img
+									src="images/c.png"
+									alt=""
+									class="relevant-new-icon7 relevant-new-icon"
+								/>
+								<input type="file" class="icon-add-file7" />
+								<!-- <div class="icon-file-bg7"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title7" contenteditable="true">
+										Lynn Vision Gaming вылетела из PGL Major Copenhagen 2024
+									</div>
+									<button class="save-button7">Сохранить</button>
+
+									<img
+										src="https://virtus-img.cdnvideo.ru/images/material-card/plain/a3/a360c4a6-6a66-4e37-b505-99d6e874c9db.jpg"
+										alt=""
+										class="previewImage7 previewImage"
+									/>
+									<input type="file" class="add-file7 add-file" />
+									<!-- <div class="add-file-bg7">
+										<img
+											src="images/free-icon-plus-3303893.png"
+											alt=""
+											width="70px"
+											height="70px"
+										/>
+									</div> -->
+								</div>
+							</div>
+
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles8.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img
+									src="images/c.png"
+									alt=""
+									class="relevant-new-icon8 relevant-new-icon"
+								/>
+								<input type="file" class="icon-add-file8" />
+								<!-- <div class="icon-file-bg8"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title8" contenteditable="true">
+										FalleN или gla1ve — чья команда покинет мейджор со
+										статистикой 1:3?
+									</div>
+									<button class="save-button8">Сохранить</button>
+
+									<img
+										src="https://virtus-img.cdnvideo.ru/images/material-card/plain/b8/b8e24bb0-f6b3-41b4-957a-069ba148d9cc.png"
+										alt=""
+										class="previewImage8 previewImage"
+									/>
+									<input type="file" class="add-file8 add-file" />
+									<!-- <div class="add-file-bg8">
+										<img
+											src="images/free-icon-plus-3303893.png"
+											alt=""
+											width="70px"
+											height="70px"
+										/>
+									</div> -->
+								</div>
+							</div>
+
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles9.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img
+									src="images/c.png"
+									alt=""
+									class="relevant-new-icon9 relevant-new-icon"
+								/>
+								<input type="file" class="icon-add-file9" />
+								<!-- <div class="icon-file-bg9"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title9" contenteditable="true">
+										Gladiators могут подписать состав по Counter-Strike 2
+									</div>
+									<button class="save-button9">Сохранить</button>
+
+									<img
+										src="https://virtus-img.cdnvideo.ru/images/material-card/plain/db/db531fcf-355e-438e-9be3-ab053a5012a5.png"
+										alt=""
+										class="previewImage9 previewImage"
+									/>
+									<input type="file" class="add-file9 add-file" />
+									<!-- <div class="add-file-bg9">
+										<img
+											src="images/free-icon-plus-3303893.png"
+											alt=""
+											width="70px"
+											height="70px"
+										/>
+									</div> -->
+								</div>
+							</div>
+
+							<div class="relevant-new">
+								<a
+									href="csArticles/adminCsArticles10.html"
+									class="relevant-new-link"
+									>Редактировать статью</a
+								>
+								<img
+									src="images/c.png"
+									alt=""
+									class="relevant-new-icon10 relevant-new-icon cs"
+								/>
+								<input type="file" class="icon-add-file10" />
+								<!-- <div class="icon-file-bg10"></div> -->
+								<div class="relevant-new-info">
+									<div class="relevant-new-title10" contenteditable="true">
+										Boombl4 после победы над SAW: «Домой, ***, португальские
+										дети! SIU!»
+									</div>
+									<button class="save-button10">Сохранить</button>
+
+									<img
+										src="https://virtus-img.cdnvideo.ru/images/material-card/plain/59/5945abff-afde-46e4-ac95-dbdef504c5e0.png"
+										alt=""
+										class="previewImage10 previewImage"
+									/>
+									<input type="file" class="add-file10 add-file" />
+									<!-- <div class="add-file-bg10">
+										<img
+											src="images/free-icon-plus-3303893.png"
+											alt=""
+											width="70px"
+											height="70px"
+										/>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-text">
+					На информационном ресурсе применяются рекомендательные технологии в
+					соответствии с Правилами
+				</div>
+				<div class="wrapper">
+					<img
+						src="images/free-icon-letter-c-3665923 1.png"
+						alt="Logo"
+						class="logo"
+					/>
+					<h1 class="h1-title">CYBERSPORT</h1>
+					<nav class="navigation">
+						<ul>
+							<li>
+								<a href="adminIndex.html">ГЛАВНАЯ</a>
+							</li>
+							<li>
+								<a href="adminDota.html">DOTA 2</a>
+							</li>
+							<li>
+								<a href="adminCs.html"><span>CS 2</span></a>
+							</li>
+						</ul>
+					</nav>
+
+					<h2 class="h2-title">© 2024</h2>
+				</div>
+			</div>
+		</footer>
+
+		<script src="scripts/adminCs.js"></script>
+	</body>
+</html>
